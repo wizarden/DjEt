@@ -13,6 +13,8 @@ class Question(models.Model):
         ('4','5'),
     )
     ml = models.CharField(max_length=200,choices=mylist)
+    def __str__(self):
+        return self.question_text
 
 class Choice(models.Model):
     question = models.ForeignKey(Question, on_delete=models.CASCADE)

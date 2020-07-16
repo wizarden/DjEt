@@ -1,7 +1,11 @@
+{% extends "polls/base.html" %}
 
+{% block title %}Articles for{% endblock %}
 
+{% block content %}
 <ul>
-{% for choice in question %}
+    {% for choice in question %}
     <li>{{ choice.question_text }}</li>
-{% endfor %}
+    {% endfor %}
 </ul>
+{% endblock %}
