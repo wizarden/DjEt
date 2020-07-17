@@ -1,11 +1,13 @@
 from django.contrib import admin
+from . import models
 
 # Register your models here.
 
-from .models import Izd
-from .models import Harak
 
-admin.site.register(Izd)
 
-admin.site.register(Harak)
+
+admin.site.register(models.Izd)
+admin.site.register(models.Harak)
+admin.site.register(models.Upak)
+
 
